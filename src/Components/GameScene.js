@@ -176,11 +176,12 @@ const ModalBody = ({ pid, handleUserData, userData, handleModalClose }) => {
         onClick={() => {
           let num = prompt("칩 갯수를 입력하세요.", 0);
           let mount = parseInt(num);
-          if (mount !== 0 && typeof parseInt(mount) === "number") {
+          if (mount !== 0 && typeof mount === "number" && !isNaN(mount)) {
             handleUserData.setUserChips(pid, mount);
             alert("Confirmed!");
           } else {
             alert("Fuck You!");
+            return;
           }
         }}>
         칩 입력

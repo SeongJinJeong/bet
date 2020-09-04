@@ -36,6 +36,7 @@ function Settings(props) {
         alignItems: "center",
         height: "100%",
       }}>
+      <img src="/betPage/nyang.png" style={{ width: "50%", height: "20%" }} />
       <h1 style={{ color: "greenyellow", fontSize: "400%" }}>준비하기</h1>
       <input
         type="number"
