@@ -50,11 +50,12 @@ const GameScene = (props) => {
   const handleLogArray = {
     add: (player, money) => {
       let tmp = logArray;
-      tmp.push(
-        `${moment().format(
+      tmp.push({
+        text: `${moment().format(
           "ddd, h:mm:ss A"
-        )} : ${player} 의 칩이 ${money} 만큼 합산됨`
-      );
+        )} : ${player} 의 칩이 ${money} 만큼 합산됨`,
+        isPlus: money > 0 ? true : false,
+      });
       setLogArray(tmp);
     },
   };
@@ -88,7 +89,7 @@ const GameScene = (props) => {
           See Log
         </button>
         <Drawer anchor="right" open={openDrawer} onClose={toggleDrawer}>
-          <LogBox logArray={logArray} />
+          <LogBox logArray={logArray} toggleDrawer={toggleDrawer} />
         </Drawer>
         {userData.map((value, index) => {
           return (
@@ -110,20 +111,30 @@ const GameScene = (props) => {
   );
 };
 
-const LogBox = ({ logArray }) => {
+const LogBox = ({ logArray, toggleDrawer }) => {
   return logArray.length > 0 ? (
-    <div className="asdf">
+    <div className="asdf" onClick={toggleDrawer} style={{ minHeight: "100%" }}>
       {logArray.map((value, index) => {
         return <LogLine log={value} />;
       })}
     </div>
   ) : (
-    <p>log is empty</p>
+    <p style={{ fontWeight: "bold", color: "red" }}>log is empty</p>
   );
 };
 
 const LogLine = ({ log }) => {
-  return <p style={{ color: "black", fontWeight: "bold" }}>{log}</p>;
+  return (
+    <p
+      style={{
+        color: log.isPlus ? "Green" : "red",
+        fontWeight: "bold",
+        margin: "0px 10px",
+        marginTop: "5px",
+      }}>
+      {log.text}
+    </p>
+  );
 };
 
 const UserBox = ({ userData, handleUserData, handleLogArray, pid }) => {
