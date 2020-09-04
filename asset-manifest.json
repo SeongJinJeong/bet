@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/betPage/static/js/main.947028f0.chunk.js",
-    "main.js.map": "/betPage/static/js/main.947028f0.chunk.js.map",
+    "main.js": "/betPage/static/js/main.1af92fe2.chunk.js",
+    "main.js.map": "/betPage/static/js/main.1af92fe2.chunk.js.map",
     "runtime-main.js": "/betPage/static/js/runtime-main.526322bc.js",
     "runtime-main.js.map": "/betPage/static/js/runtime-main.526322bc.js.map",
     "static/js/2.2e6d511f.chunk.js": "/betPage/static/js/2.2e6d511f.chunk.js",
     "static/js/2.2e6d511f.chunk.js.map": "/betPage/static/js/2.2e6d511f.chunk.js.map",
     "index.html": "/betPage/index.html",
-    "precache-manifest.21e2eb1348d7b9021956a2c57631b9ff.js": "/betPage/precache-manifest.21e2eb1348d7b9021956a2c57631b9ff.js",
+    "precache-manifest.4d88d77e004e4ece50438c61308f30c0.js": "/betPage/precache-manifest.4d88d77e004e4ece50438c61308f30c0.js",
     "service-worker.js": "/betPage/service-worker.js",
     "static/js/2.2e6d511f.chunk.js.LICENSE.txt": "/betPage/static/js/2.2e6d511f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.526322bc.js",
     "static/js/2.2e6d511f.chunk.js",
-    "static/js/main.947028f0.chunk.js"
+    "static/js/main.1af92fe2.chunk.js"
   ]
 }
