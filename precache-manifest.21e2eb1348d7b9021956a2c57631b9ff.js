@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa5610acd2d424eae5788356e416212e",
+    "revision": "30b348513105525aa9811c9bd812f035",
     "url": "/betPage/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/betPage/static/js/2.2e6d511f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c24c689a31811108d58b",
-    "url": "/betPage/static/js/main.3ced39d4.chunk.js"
+    "revision": "da1b9a4468ab82ff4704",
+    "url": "/betPage/static/js/main.947028f0.chunk.js"
   },
   {
     "revision": "2eb0e23e00609696d83c",
