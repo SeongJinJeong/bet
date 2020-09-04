@@ -81,6 +81,7 @@ function Settings(props) {
         }}>
         " This App only run on AOS "
       </p>
+      <p style={{ margin: 0, color: "red" }}>" Do not refresh the Page "</p>
     </div>
   );
 }
